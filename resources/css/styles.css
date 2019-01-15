@@ -1,0 +1,107 @@
+/* Universal Styles */
+html{
+    font-family: 'Bitter', Georgia, serif;
+    font-family: 'Roboto', Helvetica, serif;
+    margin 0 auto;
+    background-color: aliceblue;
+    text-size: 16px;
+    max-width: 1024px;
+}
+
+/* Specific Styles */
+.header{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+.inline-logo{
+    display: inline-block;
+}
+.header-icon{
+    padding-left: 1.5rem;
+}
+.header-Colmar-title{
+    height: 2rem;
+    text-emphasis: bold;
+}
+
+.header-Colmar-title2{
+}
+.header-links-text{
+    display:flex;
+    flex-flow: row wrap;
+    text-decoration: none;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+.header-links-icons{
+    display:flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    justify-content: flex-end;
+}
+
+
+/*Top Container*/
+.big-container-flex{
+
+}
+
+.big-img-item{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-flow: row  nowrap;
+    max-width: 1024px;
+
+}
+#banner{
+    width:60%;
+    height:60%;
+    padding: 1.5rem 2.0rem;
+}
+.1st-box-right-item{
+    display: flex;
+    align-items: center;
+}
+
+.flex-container-practicing{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-flow: row  nowrap;
+    max-width: 1024px;
+    padding: 1.5rem 2.0rem;
+}
+.flex-item-practicing{
+    width:60%;
+    padding-bottom: 2rem;
+}
+#mainpic{
+    width:60%;
+}
+.flex-item-practicing h1{
+    padding-bottom: 1.5rem;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 1080px){
+    .header-links-text{
+        display:none;
+    }
+    .header-links-icons{
+    display:flex;
+}
+
+@media only screen and min-width: 1081px{
+    .header-links-icons{
+        display: none;
+    }
+    .header-links-text{
+        display: flex;
+    }
+}
